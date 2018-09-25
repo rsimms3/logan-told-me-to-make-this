@@ -4402,7 +4402,7 @@ Global lightflag = false;
 ! ListWriter.i6t: Memory
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
-Constant REQUISITION_STACK_SIZE = 3*20;
+Constant REQUISITION_STACK_SIZE = 3*28;
 Array requisition_stack --> REQUISITION_STACK_SIZE;
 Global requisition_stack_pointer = 0;
 
@@ -10544,7 +10544,7 @@ Constant IK1_First = I125_floor_4s_of_nugent_hall;
 Constant IK2_First = selfobj;
 Constant IK3_First = I51_north;
 Constant IK4_First = nothing;
-Constant IK5_First = nothing;
+Constant IK5_First = I133_dresser;
 Constant IK6_First = I129_bookshelf;
 Constant IK7_First = nothing;
 Constant IK8_First = selfobj;
@@ -10570,11 +10570,11 @@ Constant DirectionObject_9 = I60_down;
 Constant DirectionObject_10 = in_obj;
 Constant DirectionObject_11 = out_obj;
 Array Map_Storage -->
- I126_elevators 0 0 0 0 0 I128_reagan_s_room I130_large_lounge 0 0 0 0 ! Exits from: I125_floor_4s_of_nugent_hall
+ I126_elevators 0 0 0 0 0 I128_reagan_s_room I138_large_lounge 0 0 0 0 ! Exits from: I125_floor_4s_of_nugent_hall
  0 0 0 I125_floor_4s_of_nugent_hall 0 0 0 0 0 0 0 0 ! Exits from: I126_elevators
  0 0 0 0 0 0 0 I125_floor_4s_of_nugent_hall 0 0 0 0 ! Exits from: I128_reagan_s_room
- 0 0 0 0 0 0 I125_floor_4s_of_nugent_hall I131_nathan___cameron_s_room 0 0 0 0 ! Exits from: I130_large_lounge
- 0 0 0 0 0 0 I130_large_lounge 0 0 0 0 0 ! Exits from: I131_nathan___cameron_s_room
+ 0 0 0 0 0 0 I125_floor_4s_of_nugent_hall I139_nathan___cameron_s_room 0 0 0 0 ! Exits from: I138_large_lounge
+ 0 0 0 0 0 0 I138_large_lounge 0 0 0 0 0 ! Exits from: I139_nathan___cameron_s_room
 ;
 
 Class VPH_Class;
@@ -11097,7 +11097,7 @@ Object I128_reagan_s_room ""
     with room_index -1
     has mark_as_room
     with IK1_Count 2
-    with IK1_Link I130_large_lounge
+    with IK1_Link I138_large_lounge
     with KD_Count 1
     with name 'reagan^s' 'room' 'rooms//p' 
     with list_together BC_166
@@ -11113,7 +11113,7 @@ Object -> I129_bookshelf ""
     with vector 0
     has mark_as_thing
     with IK2_Count 2
-    with IK2_Link nothing
+    with IK2_Link I130_bamboo
     with IK6_Count 0
     with IK6_Link nothing
     with KD_Count 6
@@ -11124,26 +11124,170 @@ Object -> I129_bookshelf ""
     with article BC_174
 ;
 
-Object I130_large_lounge ""
-    class K1_room
+Object -> -> I130_bamboo ""
+    class K2_thing
     with short_name BC_175
     with description BC_176
+    has proper
+    with vector 0
+    has mark_as_thing
+    with IK2_Count 3
+    with IK2_Link I131_succulent
+    with KD_Count 2
+    with name 'bamboo' 'things//p' 
+    with action_bitmap 0 0 0 0 0 
+    with initial BC_177
+    with list_together BC_178
+    with plural BC_179
+    with article BC_180
+;
+
+Object -> -> I131_succulent ""
+    class K2_thing
+    with short_name BC_181
+    with description BC_182
+    has proper
+    with vector 0
+    has mark_as_thing
+    with IK2_Count 4
+    with IK2_Link I132_song_of_ice___fire_book
+    with KD_Count 2
+    with name 'succulent' 'things//p' 
+    with action_bitmap 0 0 0 0 0 
+    with initial BC_183
+    with list_together BC_184
+    with plural BC_185
+    with article BC_186
+;
+
+Object -> -> I132_song_of_ice___fire_book ""
+    class K2_thing
+    with short_name BC_187
+    with description BC_188
+    with vector 0
+    has mark_as_thing
+    with IK2_Count 5
+    with IK2_Link I133_dresser
+    with KD_Count 2
+    with name 'song' 'of' 'ice' '&//' 'fire' 'books' 'things//p' 
+    with action_bitmap 0 0 0 0 0 
+    with initial BC_189
+    with list_together BC_190
+    with plural BC_191
+    with article BC_192
+;
+
+Object -> I133_dresser ""
+    class K5_container
+    with short_name BC_193
+    with initial BC_194
+    with vector 0
+    has mark_as_thing
+    with IK2_Count 6
+    with IK2_Link I134_open_drawer
+    with IK5_Count 0
+    with IK5_Link I134_open_drawer
+    with KD_Count 5
+    with name 'dresser' 'containers//p' 
+    with action_bitmap 0 0 0 0 0 
+    with description BC_195
+    with list_together BC_196
+    with plural BC_197
+    with article BC_198
+;
+
+Object -> -> I134_open_drawer ""
+    class K5_container
+    with short_name BC_199
+    with description BC_200
+    with vector 0
+    has mark_as_thing
+    with IK2_Count 7
+    with IK2_Link I135_package_of_ramen
+    with IK5_Count 1
+    with IK5_Link nothing
+    with KD_Count 5
+    with name 'open' 'drawer' 'containers//p' 
+    with action_bitmap 0 0 0 0 0 
+    with initial BC_201
+    with list_together BC_202
+    with plural BC_203
+    with article BC_204
+;
+
+Object -> -> -> I135_package_of_ramen ""
+    class K2_thing
+    with short_name BC_205
+    with initial BC_206
+    has edible
+    with vector 0
+    has mark_as_thing
+    with IK2_Count 8
+    with IK2_Link I136_box_of_cereal
+    with KD_Count 2
+    with name 'package' 'of' 'ramen' 'things//p' 
+    with action_bitmap 0 0 0 0 0 
+    with description BC_207
+    with list_together BC_208
+    with plural BC_209
+    with article BC_210
+;
+
+Object -> -> -> I136_box_of_cereal ""
+    class K2_thing
+    with short_name BC_211
+    with initial BC_212
+    has edible
+    with vector 0
+    has mark_as_thing
+    with IK2_Count 9
+    with IK2_Link I137_popcorn
+    with KD_Count 2
+    with name 'box' 'of' 'cereal' 'things//p' 
+    with action_bitmap 0 0 0 0 0 
+    with description BC_213
+    with list_together BC_214
+    with plural BC_215
+    with article BC_216
+;
+
+Object -> -> -> I137_popcorn ""
+    class K2_thing
+    with short_name BC_217
+    with initial BC_218
+    with vector 0
+    has mark_as_thing
+    with IK2_Count 10
+    with IK2_Link nothing
+    with KD_Count 2
+    with name 'popcorn' 'things//p' 
+    with action_bitmap 0 0 0 0 0 
+    with description BC_219
+    with list_together BC_220
+    with plural BC_221
+    with article BC_222
+;
+
+Object I138_large_lounge ""
+    class K1_room
+    with short_name BC_223
+    with description BC_224
     with vector 0
     with room_index -1
     has mark_as_room
     with IK1_Count 3
-    with IK1_Link I131_nathan___cameron_s_room
+    with IK1_Link I139_nathan___cameron_s_room
     with KD_Count 1
     with name 'large' 'lounge' 'rooms//p' 
-    with list_together BC_177
-    with plural BC_178
-    with article BC_179
+    with list_together BC_225
+    with plural BC_226
+    with article BC_227
 ;
 
-Object I131_nathan___cameron_s_room ""
+Object I139_nathan___cameron_s_room ""
     class K1_room
-    with short_name BC_180
-    with description BC_181
+    with short_name BC_228
+    with description BC_229
     has proper
     with vector 0
     with room_index -1
@@ -11152,9 +11296,9 @@ Object I131_nathan___cameron_s_room ""
     with IK1_Link nothing
     with KD_Count 1
     with name 'nathan' '&//' 'cameron^s' 'room' 'rooms//p' 
-    with list_together BC_182
-    with plural BC_183
-    with article BC_184
+    with list_together BC_230
+    with plural BC_231
+    with article BC_232
 ;
 
 Constant I71_german_language = 1;
@@ -11208,12 +11352,12 @@ Constant I123_masculine_gender = 2;
 Constant I124_feminine_gender = 3;
 Array Global_Vars -->
   (false) ! 7 darkness witnessed
-  (BC_185) ! 25 command prompt
+  (BC_233) ! 25 command prompt
   (I73_english_language) ! 29 language of play
-  (BC_186) ! 32 story author
-  (BC_187) ! 33 story headline
-  (BC_188) ! 34 story genre
-  (BC_189) ! 35 story description
+  (BC_234) ! 32 story author
+  (BC_235) ! 33 story headline
+  (BC_236) ! 34 story genre
+  (BC_237) ! 35 story description
   (1) ! 36 release number
   (0) ! 37 story creation year
   (0) ! 45 locale paragraph count
@@ -11228,14 +11372,14 @@ Array Global_Vars -->
 
 
 Array T0_final_question_options table  tab_0_0 tab_0_1 tab_0_2 tab_0_3 tab_0_4;
-Array tab_0_0 table $0664 0 (BC_190) (BC_191) (BC_192) (BC_193) (BC_194) ;
+Array tab_0_0 table $0664 0 (BC_238) (BC_239) (BC_240) (BC_241) (BC_242) ;
 Array tab_0_1 table $0465 1 (0) (0) (1) (0) (0) ;
 Array tab_0_2 table $2066 2 (Consult_Grammar_93) (Consult_Grammar_94) (Consult_Grammar_95) (Consult_Grammar_96) (Consult_Grammar_97) ;
 Array tab_0_3 table $0067 3 (IMMEDIATELY_RESTART_VM_R) (IMMEDIATELY_RESTORE_SAVED_R) ( TABLE_NOVALUE) (IMMEDIATELY_QUIT_R) (IMMEDIATELY_UNDO_R) ;
 Array tab_0_4 table $0068 4 ( TABLE_NOVALUE) ( TABLE_NOVALUE) (V27_amusing_a_victorious_pla) ( TABLE_NOVALUE) ( TABLE_NOVALUE) ;
 Array T1_locale_priorities table  tab_1_0 tab_1_1;
-Array tab_1_0 table $0869 NULL ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
-Array tab_1_1 table $446a 5 ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
+Array tab_1_0 table $0869 NULL ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
+Array tab_1_1 table $446a 5 ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
 Array TB_Blanks -> 
   ! For table T0_final_question_options
   $00  ! Column 0
@@ -11245,7 +11389,7 @@ Array TB_Blanks ->
   $1b  ! Column 4
   
   ! For table T1_locale_priorities
-  $0f  ! Column 1
+  $ff $0f  ! Column 1
   
   ! End of table
   NULL NULL;
@@ -12452,7 +12596,7 @@ Array ActionHappened --> 0 0 0 0 0;
 ! No specific request
 ! Instead of going nowhere when the player is in A Large Lounge:
 [ R_802 ;
-    if ((((action ==##Go) &&  (actor==player) && ((MStack-->MstVON(20007,1)) == nothing) && (self=actor,true) && (((I130_large_lounge == ContainerOf(player))))))) { ! Runs only when pattern matches
+    if ((((action ==##Go) &&  (actor==player) && ((MStack-->MstVON(20007,1)) == nothing) && (self=actor,true) && (((I138_large_lounge == ContainerOf(player))))))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_802, 802);
     ! [2: say ~The windows don't open very much for a reason. You can't throw yourself out of any. There's help to be had my friend.~]
@@ -12464,7 +12608,7 @@ Array ActionHappened --> 0 0 0 0 0;
 ! No specific request
 ! Instead of going nowhere when the player is in Nathan & Cameron's Room:
 [ R_803 ;
-    if ((((action ==##Go) &&  (actor==player) && ((MStack-->MstVON(20007,1)) == nothing) && (self=actor,true) && (((I131_nathan___cameron_s_room == ContainerOf(player))))))) { ! Runs only when pattern matches
+    if ((((action ==##Go) &&  (actor==player) && ((MStack-->MstVON(20007,1)) == nothing) && (self=actor,true) && (((I139_nathan___cameron_s_room == ContainerOf(player))))))) { ! Runs only when pattern matches
     self = noun;
     if (debug_rules) DB_Rule(R_803, 803);
     ! [2: say ~There's nowhere else to go, unless you can travel through walls. Wait...Are you Danny Phantom?! No? Then, no, there's nowhere else to go.~]
@@ -28139,7 +28283,7 @@ Array FWMatrix --> NUM_ROOMS*NUM_ROOMS;
 ! Relations.i6t: Relation Route-Finding
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
-Constant MAX_ROUTE_LENGTH = 20 + 32;
+Constant MAX_ROUTE_LENGTH = 28 + 32;
 
 [ RelationRouteTo relation from to count  handler;
 	if (count) {
@@ -49004,28 +49148,42 @@ Verb 'notify'
 
 
 Constant TX_PS_2 = "2.1";
-Constant TX_PS_45 = ">";
+Constant TX_PS_61 = ">";
+Constant TX_PS_50 = "A wooden dresser, with a single open drawer, pushed against the wall.";
 Constant TX_PS_3 = "An Interactive Fiction";
 Constant TX_PS_32 = "As good-looking as ever.";
+Constant TX_PS_43 = "Bamboo";
+Constant TX_PS_56 = "Cocoa Puffs are delicious and filled with sugar.";
+Constant TX_PS_49 = "Dresser";
+Constant TX_PS_48 = "Each book is a different dark color of leather, and there are five in total: A Game of Thrones, A Clash of Kings, A Storm of Swords, A Feast for Crows, and A Dance with Dragons. They look well-loved.";
 Constant TX_PS_35 = "Elevators";
-Constant TX_PS_46 = "Fiction";
+Constant TX_PS_58 = "Ew, gross, it's unpopped. You probably shouldn't eat this.";
+Constant TX_PS_62 = "Fiction";
 Constant TX_PS_34 = "Floor 4s of Nugent Hall";
-Constant TX_PS_43 = "Large Lounge";
+Constant TX_PS_52 = "Inside the drawer is two boxes of cereal, four bags of popcorn, nine packages of ramen, and more tea than the entire British isles drink in a year.";
+Constant TX_PS_44 = "Its tall stalks fill you with tranquility.";
+Constant TX_PS_59 = "Large Lounge";
 Constant TX_PS_38 = "Maybe you should examine these buttons?";
-Constant TX_PS_44 = "Nathan & Cameron's Room";
-Constant TX_PS_42 = "On first glance, it seems nice enough. There's some leather bound books on the bottom shelf, and the rest of the shelves are filled with books from the library. It has been covered with marble contact paper, so it's a bit less plain. On top of it is a small glass with bamboo growing in it, and a succulent.";
+Constant TX_PS_60 = "Nathan & Cameron's Room";
 Constant TX_PS_41 = "On second glance you can tell that the contact paper is peeling off at the edges, and that the leather bound books are the Song of Ice and Fire series. The rest of the books are all non-fiction. The metal shelves are not bowing under the weight of so many books at least.";
-Constant TX_PS_50 = "QUIT";
-Constant TX_PS_47 = "RESTART";
-Constant TX_PS_48 = "RESTORE a saved game";
+Constant TX_PS_51 = "Open Drawer";
+Constant TX_PS_66 = "QUIT";
+Constant TX_PS_63 = "RESTART";
+Constant TX_PS_64 = "RESTORE a saved game";
 Constant TX_PS_4 = "Reagan Simms";
 Constant TX_PS_39 = "Reagan's Room";
-Constant TX_PS_51 = "UNDO the last command";
+Constant TX_PS_47 = "Song of Ice & Fire Books";
+Constant TX_PS_45 = "Succulent";
+Constant TX_PS_42 = "The bookshelf sits off to the side in the room. On first glance, it seems nice enough. There's some leather bound books on the bottom shelf, and the rest of the shelves are filled with books from the library. It has been covered with marble contact paper, so it's a bit less plain. On top of it is a small glass with bamboo growing in it, and a succulent.";
+Constant TX_PS_67 = "UNDO the last command";
+Constant TX_PS_54 = "Uncooked noodles, wrapped in bright yellow and pink packaging. Delicious.";
+Constant TX_PS_46 = "Upon further inspection, you realize that the succulent is plastic.";
 Constant TX_PS_37 = "Why won't pressing these get you anywhere? How de-pressing!";
 Constant TX_PS_33 = "Yourself";
 Constant TX_PS_9 = "animals";
 Constant TX_PS_14 = "backdrops";
 Constant TX_PS_40 = "bookshelf";
+Constant TX_PS_55 = "box of cereal";
 Constant TX_PS_36 = "buttons";
 Constant TX_PS_11 = "containers";
 Constant TX_PS_15 = "devices";
@@ -49039,10 +49197,12 @@ Constant TX_PS_18 = "north";
 Constant TX_PS_20 = "northeast";
 Constant TX_PS_21 = "northwest";
 Constant TX_PS_30 = "outside";
+Constant TX_PS_53 = "package of ramen";
 Constant TX_PS_6 = "people";
 Constant TX_PS_13 = "player's holdalls";
+Constant TX_PS_57 = "popcorn";
 Constant TX_PS_16 = "regions";
-Constant TX_PS_49 = "see some suggestions for AMUSING things to do";
+Constant TX_PS_65 = "see some suggestions for AMUSING things to do";
 Constant TX_PS_22 = "south";
 Constant TX_PS_23 = "southeast";
 Constant TX_PS_24 = "southwest";
@@ -56382,25 +56542,73 @@ Array BC_172 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_173 --> PACKED_TEXT_STORAGE TX_PS_5;
 Array BC_174 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_175 --> PACKED_TEXT_STORAGE TX_PS_43;
-Array BC_176 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_137;
+Array BC_176 --> PACKED_TEXT_STORAGE TX_PS_44;
 Array BC_177 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_178 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_179 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_180 --> PACKED_TEXT_STORAGE TX_PS_44;
-Array BC_181 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_138;
-Array BC_182 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_180 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_181 --> PACKED_TEXT_STORAGE TX_PS_45;
+Array BC_182 --> PACKED_TEXT_STORAGE TX_PS_46;
 Array BC_183 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_184 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_185 --> PACKED_TEXT_STORAGE TX_PS_45;
-Array BC_186 --> PACKED_TEXT_STORAGE TX_PS_4;
-Array BC_187 --> PACKED_TEXT_STORAGE TX_PS_3;
-Array BC_188 --> PACKED_TEXT_STORAGE TX_PS_46;
+Array BC_185 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_186 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_187 --> PACKED_TEXT_STORAGE TX_PS_47;
+Array BC_188 --> PACKED_TEXT_STORAGE TX_PS_48;
 Array BC_189 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_190 --> PACKED_TEXT_STORAGE TX_PS_47;
-Array BC_191 --> PACKED_TEXT_STORAGE TX_PS_48;
-Array BC_192 --> PACKED_TEXT_STORAGE TX_PS_49;
-Array BC_193 --> PACKED_TEXT_STORAGE TX_PS_50;
-Array BC_194 --> PACKED_TEXT_STORAGE TX_PS_51;
+Array BC_190 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_191 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_192 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_193 --> PACKED_TEXT_STORAGE TX_PS_49;
+Array BC_194 --> PACKED_TEXT_STORAGE TX_PS_50;
+Array BC_195 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_196 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_197 --> PACKED_TEXT_STORAGE TX_PS_11;
+Array BC_198 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_199 --> PACKED_TEXT_STORAGE TX_PS_51;
+Array BC_200 --> PACKED_TEXT_STORAGE TX_PS_52;
+Array BC_201 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_202 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_203 --> PACKED_TEXT_STORAGE TX_PS_11;
+Array BC_204 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_205 --> PACKED_TEXT_STORAGE TX_PS_53;
+Array BC_206 --> PACKED_TEXT_STORAGE TX_PS_54;
+Array BC_207 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_208 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_209 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_210 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_211 --> PACKED_TEXT_STORAGE TX_PS_55;
+Array BC_212 --> PACKED_TEXT_STORAGE TX_PS_56;
+Array BC_213 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_214 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_215 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_216 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_217 --> PACKED_TEXT_STORAGE TX_PS_57;
+Array BC_218 --> PACKED_TEXT_STORAGE TX_PS_58;
+Array BC_219 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_220 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_221 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_222 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_223 --> PACKED_TEXT_STORAGE TX_PS_59;
+Array BC_224 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_137;
+Array BC_225 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_226 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_227 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_228 --> PACKED_TEXT_STORAGE TX_PS_60;
+Array BC_229 --> CONSTANT_PACKED_TEXT_STORAGE R_TX_S_138;
+Array BC_230 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_231 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_232 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_233 --> PACKED_TEXT_STORAGE TX_PS_61;
+Array BC_234 --> PACKED_TEXT_STORAGE TX_PS_4;
+Array BC_235 --> PACKED_TEXT_STORAGE TX_PS_3;
+Array BC_236 --> PACKED_TEXT_STORAGE TX_PS_62;
+Array BC_237 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_238 --> PACKED_TEXT_STORAGE TX_PS_63;
+Array BC_239 --> PACKED_TEXT_STORAGE TX_PS_64;
+Array BC_240 --> PACKED_TEXT_STORAGE TX_PS_65;
+Array BC_241 --> PACKED_TEXT_STORAGE TX_PS_66;
+Array BC_242 --> PACKED_TEXT_STORAGE TX_PS_67;
 
 
 
