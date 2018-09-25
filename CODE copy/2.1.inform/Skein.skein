@@ -1,0 +1,514 @@
+<?xml version="1.0"?>
+
+<Skein rootNode="node-1002">
+    <generator>Inform Mac Client (Inform version 1.65/6.33/6M62)</generator>
+    <item nodeId="node-1002">
+        <command xml:space="preserve">2.1</command>
+        <result xml:space="preserve">
+
+
+2.1
+An Interactive Fiction by Reagan Simms
+Release 1 / Serial number 180924 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+Floor 4s of Nugent Hall
+It is a long hallway. The walls are red, and the carpet isn't very soft. To the NORTH lies the Elevators to leave, to the EAST lies Reagan's Room. To the WEST lies a large lounge.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1048"></child>
+            <child nodeId="node-1045"></child>
+            <child nodeId="node-1037"></child>
+            <child nodeId="node-1032"></child>
+            <child nodeId="node-1026"></child>
+            <child nodeId="node-1008"></child>
+            <child nodeId="node-1003"></child>
+        </children>
+    </item>
+    <item nodeId="node-1003">
+        <command xml:space="preserve">wesy</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1004"></child>
+        </children>
+    </item>
+    <item nodeId="node-1004">
+        <command xml:space="preserve">west</command>
+        <result xml:space="preserve">
+Large Lounge
+Red and tan armchairs flank the giant windows, and a large couch is in front of a TV. People are studying, and a group of girls is talking far too loudly. Someone is napping in an armchair. To the WEST lies Nathan and Cameron's room.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1005"></child>
+        </children>
+    </item>
+    <item nodeId="node-1005">
+        <command xml:space="preserve">west</command>
+        <result xml:space="preserve">
+Nathan &amp; Cameron's Room
+Going past the small foyer, lies a bookshelf filled with boardgames, a small fridge, and two TVs, side by side. Two beds are lofted in the room, and a futon sits under one of them. An Asian boy is playing Overwatch on the futon, while his roommate does his homework.
+
+You can see a TV here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1006"></child>
+        </children>
+    </item>
+    <item nodeId="node-1006">
+        <command xml:space="preserve">tv</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1007"></child>
+        </children>
+    </item>
+    <item nodeId="node-1007">
+        <command xml:space="preserve">look at tv</command>
+        <result xml:space="preserve">The large TV is currently light up with the popular video game Overwatch. How fun!
+
+The TV is currently switched off.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1008">
+        <command xml:space="preserve">west</command>
+        <result xml:space="preserve">Sorry, you can't simply walk into the walls. There is nothing really interesting over there! Instead, you can go NORTHWEST to Ikeberry Dining Hall or SOUTH to ARC building.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1022"></child>
+            <child nodeId="node-1009"></child>
+        </children>
+    </item>
+    <item nodeId="node-1009">
+        <command xml:space="preserve">west</command>
+        <result xml:space="preserve">
+Nathan &amp; Cameron's Room
+Going past the small foyer, lies a bookshelf filled with boardgames, a small fridge, and two TVs, side by side. Two beds are lofted in the room, and a futon sits under one of them. An Asian boy is playing Overwatch on the futon, while his roommate does his homework.
+
+You can see a TV here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1010"></child>
+        </children>
+    </item>
+    <item nodeId="node-1010">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">Nathan &amp; Cameron's Room
+Nathan and Cameron are fighting with swords again. Oh dear. Duck under a table or leave for your own safety.
+
+You can see a TV here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1011"></child>
+        </children>
+    </item>
+    <item nodeId="node-1011">
+        <command xml:space="preserve">turn off tv</command>
+        <result xml:space="preserve">You switch the TV off.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1012"></child>
+        </children>
+    </item>
+    <item nodeId="node-1012">
+        <command xml:space="preserve">west</command>
+        <result xml:space="preserve">There's nowhere else to go, unless you can travel through walls. Wait...Are you Danny Phantom?! No? Then, no, there's nowhere else to go.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1013"></child>
+        </children>
+    </item>
+    <item nodeId="node-1013">
+        <command xml:space="preserve">east</command>
+        <result xml:space="preserve">
+Large Lounge
+Someone's snoring loudly. Nathan and Cameron's room door is open and to the WEST.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1014"></child>
+        </children>
+    </item>
+    <item nodeId="node-1014">
+        <command xml:space="preserve">east</command>
+        <result xml:space="preserve">
+Floor 4s of Nugent Hall
+This floor is a lively place. You can hear someone crying hystetically in their room. Oh dear. Midterms are coming, after all. I wonder why the paint is missing from the wall in front of Reagan's Room to the EAST. Someone exists the Elevators to the NORTH, and heads to the large lounge in the WEST.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1015"></child>
+        </children>
+    </item>
+    <item nodeId="node-1015">
+        <command xml:space="preserve">east</command>
+        <result xml:space="preserve">
+Reagan's Room
+A girl with blue hair is sprawled on her bed, cursing at her laptop. Her bookshelf is stacked high with linguistics textbooks, and a blue-and-black mobility scooter is parked in the corner. She looks irritated at being interrupted. Better leave, then.
+
+There lies, right next to the bed, a locked navy blue trunk. A mug of tea and a box of cookies sits on the trunk.
+
+On the locked oversized trunk are a mug of tea and a box of cookies (closed).
+
+You can also see Mobility Scooter (on which is a basket (in which is an i-Card)) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1016"></child>
+        </children>
+    </item>
+    <item nodeId="node-1016">
+        <command xml:space="preserve">look at trunk</command>
+        <result xml:space="preserve">There's no possible way you could open the trunk, but there's plenty of things on top of it, like a mug of tea and a box of cookies.
+
+On the locked oversized trunk are a mug of tea and a box of cookies (closed).
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1017"></child>
+        </children>
+    </item>
+    <item nodeId="node-1017">
+        <command xml:space="preserve">take cookie</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1018"></child>
+        </children>
+    </item>
+    <item nodeId="node-1018">
+        <command xml:space="preserve">open box of cookies</command>
+        <result xml:space="preserve">It isn't something you can open.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1019"></child>
+        </children>
+    </item>
+    <item nodeId="node-1019">
+        <command xml:space="preserve">take mug of tea</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1020"></child>
+        </children>
+    </item>
+    <item nodeId="node-1020">
+        <command xml:space="preserve">eat mug of tea</command>
+        <result xml:space="preserve">You eat the mug of tea. Not bad.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1021"></child>
+        </children>
+    </item>
+    <item nodeId="node-1021">
+        <command xml:space="preserve">take i-Card</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1022">
+        <command xml:space="preserve">east</command>
+        <result xml:space="preserve">Sorry, you can't simply walk into the walls. There is nothing really interesting over there! Instead, you can go NORTHWEST to Ikeberry Dining Hall or SOUTH to ARC building.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1023"></child>
+        </children>
+    </item>
+    <item nodeId="node-1023">
+        <command xml:space="preserve">northwest</command>
+        <result xml:space="preserve">
+Ikeberry Dining Hall
+ Welcome to the Ikeberry Dining Hall! This place contains the largest dining hall on campus! In addition, there is the ikeberry library to study and there are some cafe shops like Caffinator and 57 North, were you can grab a quick bite and refuel yourself with coffee. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1024"></child>
+        </children>
+    </item>
+    <item nodeId="node-1024">
+        <command xml:space="preserve">south</command>
+        <result xml:space="preserve">Sorry, you simply can't walk into the deep frying oil. It's very dangourous! Instead, You can go NORTH towards Green Street or SOUTHEAST to Hopkins.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1025"></child>
+        </children>
+    </item>
+    <item nodeId="node-1025">
+        <command xml:space="preserve">east</command>
+        <result xml:space="preserve">Sorry, you simply can't walk into the deep frying oil. It's very dangourous! Instead, You can go NORTH towards Green Street or SOUTHEAST to Hopkins.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1026">
+        <command xml:space="preserve">north</command>
+        <result xml:space="preserve">
+Elevators
+Ding! The Elevator's buttons make funny noises!
+
+Why won't pressing these get you anywhere? How de-pressing!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1027"></child>
+        </children>
+    </item>
+    <item nodeId="node-1027">
+        <command xml:space="preserve">examine buttons</command>
+        <result xml:space="preserve">You see nothing special about the buttons.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1028"></child>
+        </children>
+    </item>
+    <item nodeId="node-1028">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">Elevators
+Ding! Ding! Ding! Fancy buttons! Too bad The Elevator isn't working.
+
+ Shiny buttons, practically begging to be pressed. 
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1029"></child>
+        </children>
+    </item>
+    <item nodeId="node-1029">
+        <command xml:space="preserve">visit buttons</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1030"></child>
+        </children>
+    </item>
+    <item nodeId="node-1030">
+        <command xml:space="preserve">touch buttons</command>
+        <result xml:space="preserve">You feel nothing unexpected.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1031"></child>
+        </children>
+    </item>
+    <item nodeId="node-1031">
+        <command xml:space="preserve">examine the buttons</command>
+        <result xml:space="preserve">You see nothing special about the buttons.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1032">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">Kaya's Room
+ You are tired and your bed looks so comfortable, but you have stuff to do... leave the room through the door to the WEST.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1033"></child>
+        </children>
+    </item>
+    <item nodeId="node-1033">
+        <command xml:space="preserve">west</command>
+        <result xml:space="preserve">
+Kitchen
+ is big with wood floors and big windows. Outside the window there is a view of the mountains and a garden.  There's nothing in the fridge.. you should go to the store today. There is a door to the garden to the SOUTH, and a door to the living room to the SOUTHEAST.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1034"></child>
+        </children>
+    </item>
+    <item nodeId="node-1034">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">Kitchen
+ There's nothing in the fridge.. you should go to the store today. There is a door to the garden to the SOUTH, and a door to the living room to the SOUTHEAST.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1035"></child>
+        </children>
+    </item>
+    <item nodeId="node-1035">
+        <command xml:space="preserve">east</command>
+        <result xml:space="preserve">
+Kaya's Room
+ You are tired and your bed looks so comfortable, but you have stuff to do... leave the room through the door to the WEST.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1036"></child>
+        </children>
+    </item>
+    <item nodeId="node-1036">
+        <command xml:space="preserve">east</command>
+        <result xml:space="preserve">you are in the closet, there are shoes all over the floor and dresses falling off hangers, get out before you start cleaning!
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1037">
+        <command xml:space="preserve">east</command>
+        <result xml:space="preserve">
+Reagan's Room
+A girl with blue hair is sprawled on her bed, cursing at her laptop. Her bookshelf is stacked high with linguistics textbooks, and a blue-and-black mobility scooter is parked in the corner. She looks irritated at being interrupted. Better leave, then.
+
+A sleek black-and-blue mobility scooter. The perfect substitute to working legs.
+
+On Mobility Scooter is a basket (in which is an i-Card).
+
+There lies, right next to the bed, a locked navy blue trunk. A mug of tea and a box of cookies sits on the trunk.
+
+On the locked oversized trunk are a mug of tea and a box of cookies (closed).
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1040"></child>
+            <child nodeId="node-1038"></child>
+        </children>
+    </item>
+    <item nodeId="node-1038">
+        <command xml:space="preserve">take i-Card</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1039"></child>
+        </children>
+    </item>
+    <item nodeId="node-1039">
+        <command xml:space="preserve">eat i-Card</command>
+        <result xml:space="preserve">That's plainly inedible.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1040">
+        <command xml:space="preserve">examine locked oversized trunk</command>
+        <result xml:space="preserve">There's no possible way you could open the trunk, but there's plenty of things on top of it, like a mug of tea and a box of cookies.
+
+On the locked oversized trunk are a mug of tea and a box of cookies (in which is a thumbprint cookie).
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1041"></child>
+        </children>
+    </item>
+    <item nodeId="node-1041">
+        <command xml:space="preserve">eat tea</command>
+        <result xml:space="preserve">(first taking the mug of tea)
+You eat the mug of tea. Not bad.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1042"></child>
+        </children>
+    </item>
+    <item nodeId="node-1042">
+        <command xml:space="preserve">drink tea</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1043"></child>
+        </children>
+    </item>
+    <item nodeId="node-1043">
+        <command xml:space="preserve">drink cookie</command>
+        <result xml:space="preserve">There's nothing suitable to drink here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1044"></child>
+        </children>
+    </item>
+    <item nodeId="node-1044">
+        <command xml:space="preserve">eat thumbprint cookie</command>
+        <result xml:space="preserve">(first taking the thumbprint cookie)
+You eat the thumbprint cookie. Not bad.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1045">
+        <command xml:space="preserve">NORTH</command>
+        <result xml:space="preserve">
+Elevators
+Ding! The Elevator's buttons make funny noises!
+
+Shiny buttons, practically begging to be pressed.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1046"></child>
+        </children>
+    </item>
+    <item nodeId="node-1046">
+        <command xml:space="preserve">examine buttons</command>
+        <result xml:space="preserve">Why won't pressing these get you anywhere? How de-pressing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1047"></child>
+        </children>
+    </item>
+    <item nodeId="node-1047">
+        <command xml:space="preserve">eat buttons</command>
+        <result xml:space="preserve">That's plainly inedible.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1048">
+        <command xml:space="preserve">EAST</command>
+        <result xml:space="preserve">
+Reagan's Room
+A girl with blue hair is sprawled on her bed, cursing at her laptop. Her bookshelf is stacked high with linguistics textbooks, and a blue-and-black mobility scooter is parked in the corner. She looks irritated at being interrupted. Better leave, then.
+
+There lies, right next to the bed, a locked navy blue trunk. A mug of tea and a box of cookies sits on the trunk.
+
+On the locked oversized trunk are a mug of tea and a box of cookies (closed).
+
+You can also see Mobility Scooter (on which is a basket (in which is an i-Card)) here.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1049"></child>
+        </children>
+    </item>
+    <item nodeId="node-1049">
+        <command xml:space="preserve">examine mobility scooter</command>
+        <result xml:space="preserve">The headlight is useless, the horn is pathetic, but you've gotta get around campus somehow.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1050"></child>
+        </children>
+    </item>
+    <item nodeId="node-1050">
+        <command xml:space="preserve">drive mobility scooter</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+</Skein>
