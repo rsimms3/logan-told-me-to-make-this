@@ -1,0 +1,319 @@
+<?xml version="1.0"?>
+
+<Skein rootNode="node-1002">
+    <generator>Inform Mac Client (Inform version 1.65/6.33/6M62)</generator>
+    <item nodeId="node-1002">
+        <command xml:space="preserve">2.2</command>
+        <result xml:space="preserve">
+
+
+2.2
+An Interactive Fiction by Reagan Simms
+Release 1 / Serial number 180924 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+Floor 4s of Nugent Hall
+It is a long hallway. The walls are red, and the carpet isn't very soft. To the NORTH lies the Elevators to leave, to the EAST lies Reagan's Room. To the WEST lies a large lounge.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1066"></child>
+            <child nodeId="node-1073"></child>
+            <child nodeId="node-1069"></child>
+        </children>
+    </item>
+    <item nodeId="node-1069">
+        <command xml:space="preserve">look</command>
+        <result xml:space="preserve">Floor 4s of Nugent Hall
+This floor is a lively place. You can hear someone crying hystetically in their room. Oh dear. Midterms are coming, after all. I wonder why the paint is missing from the wall in front of Reagan's Room to the EAST. Someone exists the Elevators to the NORTH, and heads to the large lounge in the WEST.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1072"></child>
+            <child nodeId="node-1070"></child>
+        </children>
+    </item>
+    <item nodeId="node-1070">
+        <command xml:space="preserve">look uncomfortable carpet</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1072">
+        <command xml:space="preserve">examine uncomfortable carpet</command>
+        <result xml:space="preserve">You see nothing special about Uncomfortable carpet.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1073">
+        <command xml:space="preserve">examine carpet</command>
+        <result xml:space="preserve">Ouch, it's not very soft. Walking on hardwood floors would hurt less.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1074"></child>
+        </children>
+    </item>
+    <item nodeId="node-1074">
+        <command xml:space="preserve">east</command>
+        <result xml:space="preserve">
+Reagan's Room
+A girl with blue hair is sprawled on her bed, cursing at her laptop. A a blue-and-black mobility scooter is parked in the corner. She looks irritated at being interrupted. Better leave, then.
+
+The bookshelf sits off to the side in the room. On first glance, it seems nice enough. There's some leather bound books on the bottom shelf, and the rest of the shelves are filled with books from the library. It has been covered with marble contact paper, so it's a bit less plain. On top of it is a small glass with bamboo growing in it, and a succulent.
+
+A wooden dresser, with a single open drawer, pushed against the wall.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1066">
+        <command xml:space="preserve">e</command>
+        <result xml:space="preserve">
+Reagan's Room
+A girl with blue hair is sprawled on her bed, cursing at her laptop. A a blue-and-black mobility scooter is parked in the corner. She looks irritated at being interrupted. Better leave, then. There's a closed door near you. Perhaps it's a closet. 
+
+The bookshelf sits off to the side in the room. On first glance, it seems nice enough. There's some leather bound books on the bottom shelf, and the rest of the shelves are filled with books from the library. It has been covered with marble contact paper, so it's a bit less plain. On top of it is a small glass with bamboo growing in it, and a succulent. Also, a purple beanie is haphazardly sitting on one of the shelves.
+
+On the bookshelf is a purple beanie.
+
+You can see a variety of plants on a variety of surfaces.
+
+A wooden dresser, with a single open drawer, is pushed against the wall.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1094"></child>
+            <child nodeId="node-1076"></child>
+            <child nodeId="node-1080"></child>
+            <child nodeId="node-1090"></child>
+            <child nodeId="node-1088"></child>
+        </children>
+    </item>
+    <item nodeId="node-1088">
+        <command xml:space="preserve">take dresser</command>
+        <result xml:space="preserve">That's fixed in place.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1090">
+        <command xml:space="preserve">look closet</command>
+        <result xml:space="preserve">A surprisingly large closet, filled with clothes, right next to the door you entered through. You can probably ENTER it.
+
+In the closet are Clothes and a Bucket.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1091"></child>
+        </children>
+    </item>
+    <item nodeId="node-1091">
+        <command xml:space="preserve">take clothes</command>
+        <result xml:space="preserve">That's fixed in place.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1092"></child>
+        </children>
+    </item>
+    <item nodeId="node-1092">
+        <command xml:space="preserve">take bucket</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1080">
+        <command xml:space="preserve">examine plants</command>
+        <result xml:space="preserve">Upon further inspection, most of these are plastic.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1081"></child>
+        </children>
+    </item>
+    <item nodeId="node-1081">
+        <command xml:space="preserve">plants</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1082"></child>
+        </children>
+    </item>
+    <item nodeId="node-1082">
+        <command xml:space="preserve">look at plants</command>
+        <result xml:space="preserve">Upon further inspection, most of these are plastic.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1083"></child>
+        </children>
+    </item>
+    <item nodeId="node-1083">
+        <command xml:space="preserve">take plants</command>
+        <result xml:space="preserve">Taken.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1084"></child>
+        </children>
+    </item>
+    <item nodeId="node-1084">
+        <command xml:space="preserve">inventory</command>
+        <result xml:space="preserve">You are carrying:
+  Plants
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1085"></child>
+        </children>
+    </item>
+    <item nodeId="node-1085">
+        <command xml:space="preserve">take succulent</command>
+        <result xml:space="preserve">(Plants)
+You already have that.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1086"></child>
+        </children>
+    </item>
+    <item nodeId="node-1086">
+        <command xml:space="preserve">examine succulent</command>
+        <result xml:space="preserve">(Plants)
+Upon further inspection, most of these are plastic.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1076">
+        <command xml:space="preserve">examine plant</command>
+        <result xml:space="preserve">You see nothing special about Plant.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1077"></child>
+        </children>
+    </item>
+    <item nodeId="node-1077">
+        <command xml:space="preserve">examine bamboo</command>
+        <result xml:space="preserve">(Plant)
+You see nothing special about Plant.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1094">
+        <command xml:space="preserve">examine closet</command>
+        <result xml:space="preserve">A surprisingly large closet, filled with clothes, right next to the door you entered through. You can probably ENTER it. There is a hidden object nearby, outside of the closet somewhere. What would you use to carry water in?
+
+In the closet is Clothes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1095"></child>
+            <child nodeId="node-1101"></child>
+        </children>
+    </item>
+    <item nodeId="node-1101">
+        <command xml:space="preserve">examine bucket</command>
+        <result xml:space="preserve">You found a bucket. Hooray?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1102"></child>
+            <child nodeId="node-1107"></child>
+        </children>
+    </item>
+    <item nodeId="node-1107">
+        <command xml:space="preserve">take gold star</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1108"></child>
+        </children>
+    </item>
+    <item nodeId="node-1108">
+        <command xml:space="preserve">in bucket</command>
+        <result xml:space="preserve">I only understood you as far as wanting to (go) in.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1109"></child>
+        </children>
+    </item>
+    <item nodeId="node-1109">
+        <command xml:space="preserve">what is in bucket</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1110"></child>
+        </children>
+    </item>
+    <item nodeId="node-1110">
+        <command xml:space="preserve">take bucket</command>
+        <result xml:space="preserve">That's hardly portable.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1102">
+        <command xml:space="preserve">find bucket</command>
+        <result xml:space="preserve">That's not a verb I recognise.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1103"></child>
+        </children>
+    </item>
+    <item nodeId="node-1103">
+        <command xml:space="preserve">take bucket</command>
+        <result xml:space="preserve">You can't see any such thing.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+    <item nodeId="node-1095">
+        <command xml:space="preserve">ENTER</command>
+        <result xml:space="preserve">You get into the closet.
+
+In the closet you can see Clothes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1096"></child>
+        </children>
+    </item>
+    <item nodeId="node-1096">
+        <command xml:space="preserve">examine closet</command>
+        <result xml:space="preserve">A surprisingly large closet, filled with clothes, right next to the door you entered through. You can probably ENTER it.
+
+In the closet is Clothes.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1097"></child>
+        </children>
+    </item>
+    <item nodeId="node-1097">
+        <command xml:space="preserve">take bucket</command>
+        <result xml:space="preserve">That's hardly portable.
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+        <children><child nodeId="node-1098"></child>
+        </children>
+    </item>
+    <item nodeId="node-1098">
+        <command xml:space="preserve">examine bucket</command>
+        <result xml:space="preserve">You found a bucket. Hooray?
+
+&gt;</result>
+        <commentary xml:space="preserve"></commentary>
+    </item>
+</Skein>
